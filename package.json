@@ -1,0 +1,33 @@
+{
+  "name": "gulp",
+  "version": "0.0.1",
+  "author": "Aleksandra Haratyk",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-twig": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-color": "0.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-image": "^4.3.0",
+    "gulp-inject": "^4.3.0",
+    "gulp-jsvalidate": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.9.0",
+    "run-sequence": "^2.2.1"
+  }
+}
