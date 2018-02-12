@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     twig = require('gulp-twig'),
+    browserSync = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -50,7 +51,7 @@ gulp.task('sass', function(){
         .pipe(cleanCSS())
         .pipe(concat('style.css'))
         .pipe(gulp.dest(path.cssDist))
-        // .pipe(browserSync.stream());
+        .pipe(browserSync.stream());
 });
 
 gulp.task('default', function () {
@@ -149,4 +150,23 @@ gulp.task('connect', function () {
         port: 8001,
         livereload: true
     });
+});
+
+gulp.task('serve', function () {
+    browserSync({
+        server: path.dist,
+        port: 3010
+    });
+    connect.server({
+        root: 'web',
+        port: 8001,
+        livereload: true
+    });
+    gulp.watch(path.spritesSrc, ['sprite']);
+    gulp.watch(path.scssSrc, ['sass']);
+    gulp.watch(path.jsSrc, ['js']);
+    gulp.watch(path.twigSrcAll, ['twig']);
+    gulp.watch(path.imagesSrc, ['image']);
+    gulp.watch(path.fontsSrc, ['fonts']);
+    gulp.watch(path.dist + '*.html').on('change', browserSync.reload);
 });

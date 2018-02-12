@@ -1,11 +1,15 @@
 # GULP starting package
-Gulp with twigs configuration.
+### Gulp with browsersync and twigs configuration.
 
 ## List of tasks:
 
 Removing and rebuilding the output files - /web:
 ```
 $ gulp build
+```
+Watching rebuild files with browser synchronization:
+```
+$ gulp serve
 ```
 Verification of changes in the project and compiling them to the /web:
 ```
