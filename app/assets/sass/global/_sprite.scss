@@ -9,33 +9,44 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$icon-logo-name: 'icon-logo';
+$icon-logo-x: 0px;
+$icon-logo-y: 0px;
+$icon-logo-offset-x: 0px;
+$icon-logo-offset-y: 0px;
+$icon-logo-width: 228px;
+$icon-logo-height: 510px;
+$icon-logo-total-width: 730px;
+$icon-logo-total-height: 510px;
+$icon-logo-image: './../img/sprite.png';
+$icon-logo: (0px, 0px, 0px, 0px, 228px, 510px, 730px, 510px, './../img/sprite.png', 'icon-logo', );
 $icon-mail-name: 'icon-mail';
-$icon-mail-x: 0px;
+$icon-mail-x: 230px;
 $icon-mail-y: 205px;
-$icon-mail-offset-x: 0px;
+$icon-mail-offset-x: -230px;
 $icon-mail-offset-y: -205px;
 $icon-mail-width: 84px;
 $icon-mail-height: 60px;
-$icon-mail-total-width: 500px;
-$icon-mail-total-height: 265px;
+$icon-mail-total-width: 730px;
+$icon-mail-total-height: 510px;
 $icon-mail-image: './../img/sprite.png';
-$icon-mail: (0px, 205px, 0px, -205px, 84px, 60px, 500px, 265px, './../img/sprite.png', 'icon-mail', );
+$icon-mail: (230px, 205px, -230px, -205px, 84px, 60px, 730px, 510px, './../img/sprite.png', 'icon-mail', );
 $icon-meindl-name: 'icon-meindl';
-$icon-meindl-x: 0px;
+$icon-meindl-x: 230px;
 $icon-meindl-y: 0px;
-$icon-meindl-offset-x: 0px;
+$icon-meindl-offset-x: -230px;
 $icon-meindl-offset-y: 0px;
 $icon-meindl-width: 500px;
 $icon-meindl-height: 203px;
-$icon-meindl-total-width: 500px;
-$icon-meindl-total-height: 265px;
+$icon-meindl-total-width: 730px;
+$icon-meindl-total-height: 510px;
 $icon-meindl-image: './../img/sprite.png';
-$icon-meindl: (0px, 0px, 0px, 0px, 500px, 203px, 500px, 265px, './../img/sprite.png', 'icon-meindl', );
-$spritesheet-width: 500px;
-$spritesheet-height: 265px;
+$icon-meindl: (230px, 0px, -230px, 0px, 500px, 203px, 730px, 510px, './../img/sprite.png', 'icon-meindl', );
+$spritesheet-width: 730px;
+$spritesheet-height: 510px;
 $spritesheet-image: './../img/sprite.png';
-$spritesheet-sprites: ($icon-mail, $icon-meindl, );
-$spritesheet: (500px, 265px, './../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($icon-logo, $icon-mail, $icon-meindl, );
+$spritesheet: (730px, 510px, './../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
